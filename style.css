@@ -5,7 +5,7 @@
 body{
     background-color: #2F1893;
     font-family: "DM Sans", sans-serif;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
@@ -80,6 +80,7 @@ a, h3{
     background-color: #FFFFFF;
     width: 470px;
     height: 600px;
+    border-radius: 20px;
     text-align: center;
     position: relative;
     right: 35px;
@@ -167,4 +168,46 @@ a, h3{
     margin-top: 30px;
     margin-bottom: 30px;
     width: 363px;
+}
+
+@media (min-width: 601px) and (max-width: 950px) {
+    .startup{
+        margin-right: 0%;
+    }
+    .container{
+        flex-direction: column;
+        margin: 40px;
+    }
+
+    .navbar{
+        margin-top: 40px;
+    }
+
+    .container_2{
+        margin-left: 30px;
+    }
+    #intro{
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container{
+        flex-direction: column;
+        margin-left: 30px;
+    }
+    .container_2{
+        width: 370px;
+        height: 500px;
+        margin-left: auto;
+    }
+   
+    .startup{
+        white-space: nowrap;
+    }
+
+    .bt_1, .bt_2{
+        width: 100px;
+        height: 30px;
+    }
 }
